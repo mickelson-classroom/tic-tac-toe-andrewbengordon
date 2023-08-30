@@ -15,11 +15,11 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=America/Denver
-      - URL=<duckdns domain here>
+      - URL=sheticonmytactilitoe.duckdns.org
       - VALIDATION=duckdns
       - STAGING=false
     volumes:
-      - /home/<your user here>/data/swag:/config
+      - /home/drew/data/swag:/config
       - ./default.conf:/config/nginx/site-confs/default.conf # new part
     ports:
     - 0.0.0.0:3001:443 # note using port 443
